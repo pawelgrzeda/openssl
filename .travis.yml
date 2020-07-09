@@ -46,6 +46,8 @@ jobs:
 #           compiler: gcc
 #         - os: osx
 #           env: CONFIG_OPTS="no-asm --debug --strict-warnings no-afalgeng no-shared enable-rc5 enable-md2 -fsanitize=address" LSAN_OPTIONS="report_objects=1"
+
+# travis arm64-graviton vs arm54
     include:
         - os: linux
           arch: arm64
