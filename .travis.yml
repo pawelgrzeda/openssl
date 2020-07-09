@@ -17,16 +17,16 @@ before_install:
       fi;
     - eval "${MATRIX_EVAL}"
 
-arch:
-    - amd64
+# arch:
+#     - amd64
 
-os:
-    - linux
-    - osx
+# os:
+#     - linux
+#     - osx
 
-compiler:
-    - clang
-    - gcc
+# compiler:
+#     - clang
+#     - gcc
 
 env:
     # Note: env entry here must exactly match the value in the exclude: table below that contains env:, otherwise it will not find a match.
