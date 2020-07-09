@@ -35,17 +35,17 @@ env:
     - CONFIG_OPTS="no-asm no-makedepend enable-buildtest-c++ --strict-warnings -D_DEFAULT_SOURCE" BUILDONLY="yes" CHECKDOCS="yes" CPPFLAGS="-ansi"
 
 jobs:
-    exclude:
-        - os: linux
-          compiler: clang
-          env: CONFIG_OPTS="" DESTDIR="_install"
-        - os: linux
-          compiler: clang
-          env: CONFIG_OPTS="no-asm no-makedepend enable-buildtest-c++ --strict-warnings --with-rand-seed=rdcpu,os -D_DEFAULT_SOURCE" BUILDONLY="yes" CHECKDOCS="yes" CPPFLAGS="-ansi"
-        - os: osx
-          compiler: gcc
-        - os: osx
-          env: CONFIG_OPTS="no-asm --debug --strict-warnings no-afalgeng no-shared enable-rc5 enable-md2 -fsanitize=address" LSAN_OPTIONS="report_objects=1"
+#     exclude:
+#         - os: linux
+#           compiler: clang
+#           env: CONFIG_OPTS="" DESTDIR="_install"
+#         - os: linux
+#           compiler: clang
+#           env: CONFIG_OPTS="no-asm no-makedepend enable-buildtest-c++ --strict-warnings --with-rand-seed=rdcpu,os -D_DEFAULT_SOURCE" BUILDONLY="yes" CHECKDOCS="yes" CPPFLAGS="-ansi"
+#         - os: osx
+#           compiler: gcc
+#         - os: osx
+#           env: CONFIG_OPTS="no-asm --debug --strict-warnings no-afalgeng no-shared enable-rc5 enable-md2 -fsanitize=address" LSAN_OPTIONS="report_objects=1"
     include:
         - os: linux
           arch: arm64
