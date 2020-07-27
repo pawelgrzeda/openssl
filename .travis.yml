@@ -1,7 +1,6 @@
 dist: trusty
 sudo: required
 
-osx_image: xcode9.3
 
 language: c
 cache: ccache
@@ -17,18 +16,6 @@ before_install:
           git submodule update --init --recursive;
       fi;
     - eval "${MATRIX_EVAL}"
-
-arch:
-    - amd64
-    - arm64
-
-os:
-    - linux
-    - osx
-
-compiler:
-    - clang
-    - gcc
 
 env:
     - CONFIG_OPTS="" DESTDIR="_install"
