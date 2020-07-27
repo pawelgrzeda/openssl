@@ -49,14 +49,14 @@ jobs:
           arch: arm64-graviton2
           compiler: gcc
           group: edge
-          virt: lxd
+          virt: wm
           dist: focal
           env: CONFIG_OPTS="--strict-warnings" MAKEVERBOSE="yes"
         - os: linux
           arch: arm64-graviton2
           compiler: gcc
           group: edge
-          virt: lxd
+          virt: wm
           dist: focal
           env: CONFIG_OPTS="no-asm no-makedepend no-deprecated enable-buildtest-c++ --strict-warnings -D_DEFAULT_SOURCE" BUILDONLY="yes" CHECKDOCS="yes" GENERATE="yes" CPPFLAGS="-ansi"
 before_script:
